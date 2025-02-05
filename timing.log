@@ -1,0 +1,956 @@
+2024-10-21 09:51:48,900 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 09:51:48,901 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 09:52:22,553 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 27, in wrapper
+    logging.info(f"{f._name_} took {elapsed:.4f} seconds to finish")
+AttributeError: 'function' object has no attribute '_name_'. Did you mean: '__name__'?
+2024-10-21 09:52:22,554 - INFO - 127.0.0.1 - - [21/Oct/2024 09:52:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-21 09:52:24,271 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 27, in wrapper
+    logging.info(f"{f._name_} took {elapsed:.4f} seconds to finish")
+AttributeError: 'function' object has no attribute '_name_'. Did you mean: '__name__'?
+2024-10-21 09:52:24,273 - INFO - 127.0.0.1 - - [21/Oct/2024 09:52:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-21 09:52:27,732 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 27, in wrapper
+    logging.info(f"{f._name_} took {elapsed:.4f} seconds to finish")
+AttributeError: 'function' object has no attribute '_name_'. Did you mean: '__name__'?
+2024-10-21 09:52:27,738 - INFO - 127.0.0.1 - - [21/Oct/2024 09:52:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-21 09:53:59,412 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 09:53:59,412 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 09:55:12,763 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 09:55:12,763 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 09:55:30,297 - INFO - get_response took 0.0000 seconds to finish
+2024-10-21 09:55:30,297 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1201, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a coroutine.
+2024-10-21 09:55:30,297 - INFO - 127.0.0.1 - - [21/Oct/2024 09:55:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-21 09:55:36,492 - INFO - get_response took 0.0000 seconds to finish
+2024-10-21 09:55:36,492 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1201, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a coroutine.
+2024-10-21 09:55:36,496 - INFO - 127.0.0.1 - - [21/Oct/2024 09:55:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:14,003 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 10:00:14,003 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 10:00:24,210 - INFO - get_response took 0.0079 seconds to finish
+2024-10-21 10:00:24,210 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:24] "GET / HTTP/1.1" 200 -
+2024-10-21 10:00:39,873 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:39,881 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:39,922 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:39] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:47,252 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:47,263 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:47,266 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:47] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:47,481 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:47,481 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:47,481 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:47] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:47,982 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:47,982 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:47,989 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:47] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:49,267 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:49,267 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:49,267 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:49] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:50,040 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:50,042 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:50,042 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:50,265 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:50,265 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:50,265 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:52,673 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:52,676 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:52,676 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:52,833 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:52,833 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:52,833 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:52,999 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:52,999 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:52,999 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:53,164 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:53,164 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:53,171 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:53] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:53,331 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:53,338 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:53,340 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:53] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:53,479 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:53,479 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:53,488 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:53] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:54,030 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:54,030 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:54,036 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:54,360 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:54,365 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:54,366 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:54,522 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:54,531 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:54,531 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:54,683 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:54,687 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:54,687 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:54,856 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:54,862 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:54,868 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:54] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:55,030 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:55,032 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:55,034 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:55] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:55,315 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:55,315 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:55,315 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:55] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:00:55,535 - ERROR - get_response failed after 0.0000 seconds
+2024-10-21 10:00:55,538 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy\app.py", line 44, in get_response
+    time_now = time.time()
+AttributeError: 'builtin_function_or_method' object has no attribute 'time'
+2024-10-21 10:00:55,538 - INFO - 127.0.0.1 - - [21/Oct/2024 10:00:55] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-10-21 10:02:35,589 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 10:02:35,589 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 10:02:44,465 - INFO - get_response took 0.0070 seconds to finish
+2024-10-21 10:02:44,468 - INFO - 127.0.0.1 - - [21/Oct/2024 10:02:44] "GET / HTTP/1.1" 200 -
+2024-10-21 10:03:11,827 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-21 10:03:11,843 - INFO - get_response took 13.6863 seconds to finish
+2024-10-21 10:03:11,843 - INFO - 127.0.0.1 - - [21/Oct/2024 10:03:11] "POST / HTTP/1.1" 200 -
+2024-10-21 10:03:54,111 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-21 10:03:54,119 - INFO - get_response took 12.9599 seconds to finish
+2024-10-21 10:03:54,128 - INFO - 127.0.0.1 - - [21/Oct/2024 10:03:54] "POST / HTTP/1.1" 200 -
+2024-10-21 10:24:56,069 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 10:24:56,069 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 10:25:12,629 - INFO - get_response took 0.0056 seconds to finish
+2024-10-21 10:25:12,629 - INFO - 127.0.0.1 - - [21/Oct/2024 10:25:12] "GET / HTTP/1.1" 200 -
+2024-10-21 10:25:45,446 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-21 10:25:45,457 - INFO - parse_file took 14.1861 seconds to finish
+2024-10-21 10:25:45,458 - INFO - process_files took 14.2010 seconds to finish
+2024-10-21 10:25:45,459 - INFO - get_response took 14.2041 seconds to finish
+2024-10-21 10:25:45,460 - INFO - 127.0.0.1 - - [21/Oct/2024 10:25:45] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-10-21 10:26:04,747 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-21 10:26:04,757 - INFO - parse_file took 11.3253 seconds to finish
+2024-10-21 10:26:04,758 - INFO - process_files took 11.3380 seconds to finish
+2024-10-21 10:26:04,758 - INFO - get_response took 11.3409 seconds to finish
+2024-10-21 10:26:04,759 - INFO - 127.0.0.1 - - [21/Oct/2024 10:26:04] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-10-21 10:27:03,125 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-21 10:27:03,130 - INFO - parse_file took 14.4110 seconds to finish
+2024-10-21 10:27:03,130 - INFO - process_files took 14.4265 seconds to finish
+2024-10-21 10:27:03,130 - INFO - get_response took 14.4265 seconds to finish
+2024-10-21 10:27:03,132 - INFO - 127.0.0.1 - - [21/Oct/2024 10:27:03] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-10-21 10:28:01,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-21 10:28:01,721 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 10:28:10,317 - INFO - get_response took 0.0058 seconds to finish
+2024-10-21 10:28:10,320 - INFO - 127.0.0.1 - - [21/Oct/2024 10:28:10] "GET / HTTP/1.1" 200 -
+2024-10-21 10:28:40,014 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-21 10:28:40,026 - INFO - parse_file took 16.6062 seconds to finish
+2024-10-21 10:28:40,027 - INFO - process_files took 16.6240 seconds to finish
+2024-10-21 10:28:40,028 - INFO - get_response took 16.6261 seconds to finish
+2024-10-21 10:28:40,030 - INFO - 127.0.0.1 - - [21/Oct/2024 10:28:40] "POST / HTTP/1.1" 200 -
+2024-11-04 11:20:40,452 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-04 11:20:40,453 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 11:21:17,338 - INFO - get_response took 0.1441 seconds to finish
+2024-11-04 11:21:17,338 - INFO - 127.0.0.1 - - [04/Nov/2024 11:21:17] "GET / HTTP/1.1" 200 -
+2024-11-04 11:21:20,096 - INFO - 127.0.0.1 - - [04/Nov/2024 11:21:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-04 11:22:07,227 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-04 11:22:07,235 - INFO - parse_file took 13.6475 seconds to finish
+2024-11-04 11:22:07,235 - INFO - process_files took 13.7252 seconds to finish
+2024-11-04 11:22:07,235 - INFO - get_response took 13.7324 seconds to finish
+2024-11-04 11:22:07,243 - INFO - 127.0.0.1 - - [04/Nov/2024 11:22:07] "POST / HTTP/1.1" 200 -
+2024-11-04 14:13:50,242 - INFO - get_response took 0.0093 seconds to finish
+2024-11-04 14:13:50,242 - INFO - 127.0.0.1 - - [04/Nov/2024 14:13:50] "GET / HTTP/1.1" 200 -
+2024-11-04 14:13:54,750 - INFO - get_response took 0.0000 seconds to finish
+2024-11-04 14:13:54,750 - INFO - 127.0.0.1 - - [04/Nov/2024 14:13:54] "GET / HTTP/1.1" 200 -
+2024-11-04 14:15:34,220 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-04 14:15:34,239 - INFO - parse_file took 16.9194 seconds to finish
+2024-11-04 14:15:34,239 - INFO - process_files took 17.0161 seconds to finish
+2024-11-04 14:15:34,241 - INFO - get_response took 17.0293 seconds to finish
+2024-11-04 14:15:34,243 - INFO - 127.0.0.1 - - [04/Nov/2024 14:15:34] "POST / HTTP/1.1" 200 -
+2024-11-10 20:16:48,253 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-10 20:16:48,253 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-10 20:17:05,730 - INFO - get_response took 0.0093 seconds to finish
+2024-11-10 20:17:05,730 - INFO - 127.0.0.1 - - [10/Nov/2024 20:17:05] "GET / HTTP/1.1" 200 -
+2024-11-10 20:17:07,183 - INFO - 127.0.0.1 - - [10/Nov/2024 20:17:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-10 20:18:00,677 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-10 20:18:00,688 - INFO - parse_file took 17.5475 seconds to finish
+2024-11-10 20:18:00,692 - INFO - process_files took 17.6720 seconds to finish
+2024-11-10 20:18:00,693 - INFO - get_response took 17.6776 seconds to finish
+2024-11-10 20:18:00,694 - INFO - 127.0.0.1 - - [10/Nov/2024 20:18:00] "POST / HTTP/1.1" 200 -
+2024-11-10 20:20:41,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-10 20:20:41,583 - INFO - parse_file took 7.5993 seconds to finish
+2024-11-10 20:20:41,583 - INFO - process_files took 7.6601 seconds to finish
+2024-11-10 20:20:41,583 - INFO - get_response took 7.6667 seconds to finish
+2024-11-10 20:20:41,599 - INFO - 127.0.0.1 - - [10/Nov/2024 20:20:41] "POST / HTTP/1.1" 200 -
+2024-11-11 08:30:13,152 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 08:30:13,152 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 13:44:11,069 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 13:44:11,069 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 13:44:33,816 - INFO - get_response took 0.0992 seconds to finish
+2024-11-11 13:44:33,830 - INFO - 127.0.0.1 - - [11/Nov/2024 13:44:33] "GET / HTTP/1.1" 200 -
+2024-11-11 13:44:33,869 - INFO - 127.0.0.1 - - [11/Nov/2024 13:44:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-11 13:45:11,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-11 13:45:11,583 - INFO - parse_file took 10.2320 seconds to finish
+2024-11-11 13:45:11,583 - INFO - process_files took 10.3028 seconds to finish
+2024-11-11 13:45:11,584 - INFO - get_response took 10.3038 seconds to finish
+2024-11-11 13:45:11,584 - INFO - 127.0.0.1 - - [11/Nov/2024 13:45:11] "POST / HTTP/1.1" 200 -
+2024-11-11 13:47:38,465 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-11 13:47:38,473 - INFO - parse_file took 3.8288 seconds to finish
+2024-11-11 13:47:38,474 - INFO - process_files took 3.8483 seconds to finish
+2024-11-11 13:47:38,476 - INFO - get_response took 3.8505 seconds to finish
+2024-11-11 13:47:38,478 - INFO - 127.0.0.1 - - [11/Nov/2024 13:47:38] "POST / HTTP/1.1" 200 -
+2024-11-11 13:49:49,723 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-11 13:49:49,723 - INFO - parse_file took 10.7619 seconds to finish
+2024-11-11 13:49:49,723 - INFO - process_files took 10.7846 seconds to finish
+2024-11-11 13:49:49,723 - INFO - get_response took 10.7846 seconds to finish
+2024-11-11 13:49:49,723 - INFO - 127.0.0.1 - - [11/Nov/2024 13:49:49] "POST / HTTP/1.1" 200 -
+2024-11-11 22:35:27,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 22:35:27,597 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 22:35:44,622 - INFO - get_response took 0.0064 seconds to finish
+2024-11-11 22:35:44,627 - INFO - 127.0.0.1 - - [11/Nov/2024 22:35:44] "GET / HTTP/1.1" 200 -
+2024-11-11 22:35:47,069 - INFO - 127.0.0.1 - - [11/Nov/2024 22:35:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-11 22:36:44,497 - INFO - parse_file took 40.8228 seconds to finish
+2024-11-11 22:36:44,508 - INFO - process_files took 40.8391 seconds to finish
+2024-11-11 22:36:44,511 - INFO - get_response took 40.8467 seconds to finish
+2024-11-11 22:36:44,514 - INFO - 127.0.0.1 - - [11/Nov/2024 22:36:44] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-11 22:37:27,314 - INFO - get_response took 0.0000 seconds to finish
+2024-11-11 22:37:27,314 - INFO - 127.0.0.1 - - [11/Nov/2024 22:37:27] "GET / HTTP/1.1" 200 -
+2024-11-11 22:37:33,404 - INFO - parse_file took 40.6200 seconds to finish
+2024-11-11 22:37:33,404 - INFO - process_files took 40.6235 seconds to finish
+2024-11-11 22:37:33,404 - INFO - get_response took 40.6273 seconds to finish
+2024-11-11 22:37:33,404 - INFO - 127.0.0.1 - - [11/Nov/2024 22:37:33] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-11 22:38:30,874 - INFO - parse_file took 41.3299 seconds to finish
+2024-11-11 22:38:30,874 - INFO - process_files took 41.3330 seconds to finish
+2024-11-11 22:38:30,874 - INFO - get_response took 41.3401 seconds to finish
+2024-11-11 22:38:30,882 - INFO - 127.0.0.1 - - [11/Nov/2024 22:38:30] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-11 22:46:37,445 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 22:46:37,445 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 22:46:43,845 - INFO - get_response took 0.0059 seconds to finish
+2024-11-11 22:46:43,845 - INFO - 127.0.0.1 - - [11/Nov/2024 22:46:43] "GET / HTTP/1.1" 200 -
+2024-11-11 22:47:54,949 - INFO - parse_file took 41.5135 seconds to finish
+2024-11-11 22:47:54,949 - INFO - process_files took 41.5148 seconds to finish
+2024-11-11 22:47:54,959 - INFO - get_response took 41.5298 seconds to finish
+2024-11-11 22:47:54,964 - INFO - 127.0.0.1 - - [11/Nov/2024 22:47:54] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-11 22:48:43,647 - INFO - parse_file took 41.3483 seconds to finish
+2024-11-11 22:48:43,647 - INFO - process_files took 41.3500 seconds to finish
+2024-11-11 22:48:43,650 - INFO - get_response took 41.3613 seconds to finish
+2024-11-11 22:48:43,697 - INFO - 127.0.0.1 - - [11/Nov/2024 22:48:43] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-11 23:18:20,274 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-11 23:18:20,274 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-11 23:18:30,086 - INFO - get_response took 0.1397 seconds to finish
+2024-11-11 23:18:30,089 - INFO - 127.0.0.1 - - [11/Nov/2024 23:18:30] "GET / HTTP/1.1" 200 -
+2024-11-11 23:19:23,745 - INFO - parse_file took 41.4764 seconds to finish
+2024-11-11 23:19:23,748 - INFO - process_files took 41.4800 seconds to finish
+2024-11-11 23:19:23,748 - INFO - get_response took 41.4902 seconds to finish
+2024-11-11 23:19:23,752 - INFO - 127.0.0.1 - - [11/Nov/2024 23:19:23] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-12 09:43:55,509 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 09:43:55,509 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 09:44:48,421 - INFO - get_response took 0.1091 seconds to finish
+2024-11-12 09:44:48,422 - INFO - 127.0.0.1 - - [12/Nov/2024 09:44:48] "GET / HTTP/1.1" 200 -
+2024-11-12 09:44:50,497 - INFO - 127.0.0.1 - - [12/Nov/2024 09:44:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-12 10:02:36,828 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 10:02:36,828 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 10:02:45,865 - INFO - get_response took 0.0065 seconds to finish
+2024-11-12 10:02:45,865 - INFO - 127.0.0.1 - - [12/Nov/2024 10:02:45] "GET / HTTP/1.1" 200 -
+2024-11-12 10:03:43,725 - INFO - parse_file took 35.2200 seconds to finish
+2024-11-12 10:03:43,725 - INFO - process_files took 35.2225 seconds to finish
+2024-11-12 10:03:43,725 - INFO - get_response took 35.2335 seconds to finish
+2024-11-12 10:03:43,725 - INFO - 127.0.0.1 - - [12/Nov/2024 10:03:43] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-12 10:33:07,543 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 10:33:07,543 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 10:33:15,787 - INFO - get_response took 0.0030 seconds to finish
+2024-11-12 10:33:15,787 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:15] "GET / HTTP/1.1" 200 -
+2024-11-12 10:33:31,662 - ERROR - process_files failed after 0.0065 seconds
+2024-11-12 10:33:31,662 - INFO - get_response took 0.0100 seconds to finish
+2024-11-12 10:33:31,662 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:31] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:45,773 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:45,773 - INFO - get_response took 0.0035 seconds to finish
+2024-11-12 10:33:45,773 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:45] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:48,748 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:48,748 - INFO - get_response took 0.0000 seconds to finish
+2024-11-12 10:33:48,748 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:48] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:49,562 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:49,562 - INFO - get_response took 0.0084 seconds to finish
+2024-11-12 10:33:49,571 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:49] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:49,700 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:49,700 - INFO - get_response took 0.0112 seconds to finish
+2024-11-12 10:33:49,700 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:49] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:49,867 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:49,867 - INFO - get_response took 0.0034 seconds to finish
+2024-11-12 10:33:49,867 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:49] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:50,000 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:50,000 - INFO - get_response took 0.0000 seconds to finish
+2024-11-12 10:33:50,009 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:50,186 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:50,201 - INFO - get_response took 0.0147 seconds to finish
+2024-11-12 10:33:50,201 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:33:50,406 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:33:50,413 - INFO - get_response took 0.0070 seconds to finish
+2024-11-12 10:33:50,419 - INFO - 127.0.0.1 - - [12/Nov/2024 10:33:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:41:14,937 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 10:41:14,937 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 10:41:22,616 - INFO - get_response took 0.0078 seconds to finish
+2024-11-12 10:41:22,618 - INFO - 127.0.0.1 - - [12/Nov/2024 10:41:22] "GET / HTTP/1.1" 200 -
+2024-11-12 10:41:38,234 - ERROR - process_files failed after 0.0000 seconds
+2024-11-12 10:41:38,236 - INFO - get_response took 0.0095 seconds to finish
+2024-11-12 10:41:38,237 - INFO - 127.0.0.1 - - [12/Nov/2024 10:41:38] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 10:42:54,665 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 10:42:54,665 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 10:43:23,661 - INFO - get_response took 0.0061 seconds to finish
+2024-11-12 10:43:23,663 - INFO - 127.0.0.1 - - [12/Nov/2024 10:43:23] "GET / HTTP/1.1" 200 -
+2024-11-12 10:44:51,311 - INFO - parse_file took 67.2879 seconds to finish
+2024-11-12 10:44:51,311 - INFO - process_files took 67.2879 seconds to finish
+2024-11-12 10:44:51,311 - INFO - get_response took 67.2888 seconds to finish
+2024-11-12 10:44:51,316 - INFO - 127.0.0.1 - - [12/Nov/2024 10:44:51] "[35m[1mPOST / HTTP/1.1[0m" 206 -
+2024-11-12 12:35:32,254 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:35:32,254 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:35:43,928 - INFO - get_response took 0.0674 seconds to finish
+2024-11-12 12:35:43,929 - INFO - 127.0.0.1 - - [12/Nov/2024 12:35:43] "GET / HTTP/1.1" 200 -
+2024-11-12 12:37:13,927 - INFO - process_files took 66.1026 seconds to finish
+2024-11-12 12:37:13,927 - INFO - get_response took 66.1067 seconds to finish
+2024-11-12 12:37:13,930 - INFO - 127.0.0.1 - - [12/Nov/2024 12:37:13] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 12:44:50,541 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:44:50,541 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:44:52,796 - INFO - get_response took 0.0051 seconds to finish
+2024-11-12 12:44:52,796 - INFO - 127.0.0.1 - - [12/Nov/2024 12:44:52] "GET / HTTP/1.1" 200 -
+2024-11-12 12:46:30,272 - INFO - process_files took 66.0921 seconds to finish
+2024-11-12 12:46:30,272 - INFO - get_response took 66.0931 seconds to finish
+2024-11-12 12:46:30,287 - INFO - 127.0.0.1 - - [12/Nov/2024 12:46:30] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 12:46:34,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:46:34,051 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:46:35,779 - INFO - get_response took 0.0000 seconds to finish
+2024-11-12 12:46:35,779 - INFO - 127.0.0.1 - - [12/Nov/2024 12:46:35] "GET / HTTP/1.1" 200 -
+2024-11-12 12:47:56,353 - INFO - process_files took 65.7498 seconds to finish
+2024-11-12 12:47:56,369 - INFO - get_response took 65.7659 seconds to finish
+2024-11-12 12:47:56,370 - INFO - 127.0.0.1 - - [12/Nov/2024 12:47:56] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 12:48:45,163 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:48:45,163 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:48:46,314 - INFO - get_response took 0.0027 seconds to finish
+2024-11-12 12:48:46,318 - INFO - 127.0.0.1 - - [12/Nov/2024 12:48:46] "GET / HTTP/1.1" 200 -
+2024-11-12 12:50:08,013 - INFO - process_files took 65.8769 seconds to finish
+2024-11-12 12:50:08,013 - ERROR - get_response failed after 65.8781 seconds
+2024-11-12 12:50:08,017 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 26, in wrapper
+    result = await f(*args, **kwds)
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 65, in get_response
+    if all(response['cv'] is not None for response in responses):
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 65, in <genexpr>
+    if all(response['cv'] is not None for response in responses):
+TypeError: 'TypeError' object is not subscriptable
+2024-11-12 12:50:08,064 - INFO - 127.0.0.1 - - [12/Nov/2024 12:50:08] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 12:51:43,478 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:51:43,478 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:51:45,962 - INFO - 127.0.0.1 - - [12/Nov/2024 12:51:45] "GET / HTTP/1.1" 200 -
+2024-11-12 12:53:05,763 - INFO - process_files took 67.0717 seconds to finish
+2024-11-12 12:53:05,763 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 65, in get_response
+    if all(response['cv'] is not None for response in responses):
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 65, in <genexpr>
+    if all(response['cv'] is not None for response in responses):
+TypeError: 'TypeError' object is not subscriptable
+2024-11-12 12:53:05,763 - INFO - 127.0.0.1 - - [12/Nov/2024 12:53:05] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 12:53:52,906 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:53:52,906 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:53:54,706 - INFO - 127.0.0.1 - - [12/Nov/2024 12:53:54] "GET / HTTP/1.1" 200 -
+2024-11-12 12:55:12,271 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 65, in get_response
+    if all(response['cv'] is not None for response in responses):
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 65, in <genexpr>
+    if all(response['cv'] is not None for response in responses):
+TypeError: 'TypeError' object is not subscriptable
+2024-11-12 12:55:12,271 - INFO - 127.0.0.1 - - [12/Nov/2024 12:55:12] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-11-12 12:58:40,054 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-12 12:58:40,054 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-12 12:58:40,301 - INFO - 127.0.0.1 - - [12/Nov/2024 12:58:40] "GET / HTTP/1.1" 200 -
+2024-11-12 13:00:03,073 - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 277, in __call__
+    return call_result.result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\silal\AppData\Local\Programs\Python\Python310\lib\site-packages\asgiref\sync.py", line 353, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 66, in get_response
+    if all(response['cv'] is not None for response in responses):
+  File "E:\AgathaProject\cv-parser-deploy - llama bri\app.py", line 66, in <genexpr>
+    if all(response['cv'] is not None for response in responses):
+TypeError: 'NameError' object is not subscriptable
+2024-11-12 13:00:03,073 - INFO - 127.0.0.1 - - [12/Nov/2024 13:00:03] "[35m[1mPOST / HTTP/1.1[0m" 500 -
