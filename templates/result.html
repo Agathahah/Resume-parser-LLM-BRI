@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsed CV Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .cv-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .cv-item h2 {
+            color: #555;
+        }
+        .cv-item .section {
+            margin-bottom: 10px;
+        }
+        .cv-item .section-title {
+            font-weight: bold;
+        }
+        .cv-item .section-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cv-item .section-item {
+            margin-bottom: 5px;
+        }
+        .status {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .status.success {
+            color: green;
+        }
+        .status.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Parsed CV Data</h1>
+        <div id="cvData"></div>
+    </div>
+
+    <script>
+        // Sample output for the static preview page. All values are fictional.
+        var cvData = {
+            "data": [
+                {
+                    "cv": {
+                        "name": "Contoh Kandidat (data fiktif)",
+                        "email": "kandidat@example.com",
+                        "phone": "+62 000-0000-0000",
+                        "education": [
+                            {
+                                "degree": "Bachelor",
+                                "description": "",
+                                "field_of_study": "Statistics",
+                                "grade": 3.5,
+                                "isPresent": false,
+                                "month_from": 8,
+                                "month_to": 7,
+                                "school": "Universitas Contoh",
+                                "year_from": 2018,
+                                "year_to": 2022
+                            }
+                        ],
+                        "experience": [
+                            {
+                                "company": "PT Contoh Analitika",
+                                "description": "Membangun dashboard penjualan mingguan dan otomasi laporan.",
+                                "isPresent": true,
+                                "job_title": "Data Analyst",
+                                "job_type": "Full-time",
+                                "month_from": 9,
+                                "month_to": -1,
+                                "year_from": 2022,
+                                "year_to": -1
+                            },
+                            {
+                                "company": "Startup Fiktif",
+                                "description": "Membersihkan data survei dan membuat analisis deskriptif.",
+                                "isPresent": false,
+                                "job_title": "Data Intern",
+                                "job_type": "Internship",
+                                "month_from": 1,
+                                "month_to": 6,
+                                "year_from": 2022,
+                                "year_to": 2022
+                            }
+                        ],
+                        "language": [
+                            "Indonesian",
+                            "English"
+                        ],
+                        "skill": [
+                            "Python",
+                            "SQL",
+                            "Excel",
+                            "Communication"
+                        ]
+                    },
+                    "status": {
+                        "code": 200,
+                        "message": "CV parsed successfully."
+                    }
+                }
+            ],
+            "status": {
+                "code": 200,
+                "message": "All files parsed successfully!"
+            }
+        };
+
+        // Function to render CV data
+        function renderCV(cvData) {
+            var cvElement = document.getElementById("cvData");
+            cvElement.innerHTML = "";
+            cvData.data.forEach(function(cv, index) {
+                var cvItem = document.createElement("div");
+                cvItem.classList.add("cv-item");
+
+                // Render CV status
+                var status = document.createElement("div");
+                status.classList.add("status");
+                status.textContent = cv.status.message;
+                if (cv.status.code === 200) {
+                    status.classList.add("success");
+                } else {
+                    status.classList.add("error");
+                }
+                cvItem.appendChild(status);
+
+                // Render Name
+                var name = document.createElement("h2");
+                name.textContent = cv.cv.name;
+                cvItem.appendChild(name);
+
+                // Render Contact Information
+                var contactInfo = document.createElement("div");
+                contactInfo.classList.add("section");
+                var contactTitle = document.createElement("p");
+                contactTitle.classList.add("section-title");
+                contactTitle.textContent = "Contact Information";
+                contactInfo.appendChild(contactTitle);
+                var contactList = document.createElement("ul");
+                contactList.classList.add("section-list");
+                var phoneItem = document.createElement("li");
+                phoneItem.classList.add("section-item");
+                phoneItem.textContent = "Phone: " + cv.cv.phone;
+                contactList.appendChild(phoneItem);
+                var emailItem = document.createElement("li");
+                emailItem.classList.add("section-item");
+                emailItem.textContent = "Email: " + cv.cv.email;
+                contactList.appendChild(emailItem);
+                contactInfo.appendChild(contactList);
+                cvItem.appendChild(contactInfo);
+
+                // Render Education
+                var education = document.createElement("div");
+                education.classList.add("section");
+                var educationTitle = document.createElement("p");
+                educationTitle.classList.add("section-title");
+                educationTitle.textContent = "Education";
+                education.appendChild(educationTitle);
+                var educationList = document.createElement("ul");
+                educationList.classList.add("section-list");
+                cv.cv.education.forEach(function(edu) {
+                    var eduItem = document.createElement("li");
+                    eduItem.classList.add("section-item");
+                    eduItem.textContent = edu.degree + " in " + edu.field_of_study + " at " + edu.school + " (" + edu.year_from + " - " + edu.year_to + ")";
+                    educationList.appendChild(eduItem);
+                });
+                education.appendChild(educationList);
+                cvItem.appendChild(education);
+
+                // Render Experience
+                var experience = document.createElement("div");
+                experience.classList.add("section");
+                var experienceTitle = document.createElement("p");
+                experienceTitle.classList.add("section-title");
+                experienceTitle.textContent = "Experience";
+                experience.appendChild(experienceTitle);
+                var experienceList = document.createElement("ul");
+                experienceList.classList.add("section-list");
+                cv.cv.experience.forEach(function(exp) {
+                    var expItem = document.createElement("li");
+                    expItem.classList.add("section-item");
+                    expItem.textContent = exp.job_title + " at " + exp.company + " (" + exp.year_from + " - " + exp.year_to + ")";
+                    experienceList.appendChild(expItem);
+                });
+                experience.appendChild(experienceList);
+                cvItem.appendChild(experience);
+
+               
+                // Render Skills
+                var skills = document.createElement("div");
+                skills.classList.add("section");
+                var skillsTitle = document.createElement("p");
+                skillsTitle.classList.add("section-title");
+                skillsTitle.textContent = "Skills";
+                skills.appendChild(skillsTitle);
+                var skillsList = document.createElement("ul");
+                skillsList.classList.add("section-list");
+                cv.cv.skill.forEach(function(skill) {
+                    var skillItem = document.createElement("li");
+                    skillItem.classList.add("section-item");
+                    skillItem.textContent = skill;
+                    skillsList.appendChild(skillItem);
+                });
+                skills.appendChild(skillsList);
+                cvItem.appendChild(skills);
+
+                cvElement.appendChild(cvItem);
+            });
+        }
+
+        // Render the CV data
+        renderCV(cvData);
+    </script>
+</body>
+</html>

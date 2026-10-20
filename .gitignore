@@ -1,0 +1,12 @@
+.venv
+.env
+.flaskenv
+__pycache__
+parser/__pycache__
+# Never commit real CVs or logs (they contain personal data)
+*.pdf
+*.docx
+*.log
+.DS_Store
+.pytest_cache/
+.ruff_cache/
